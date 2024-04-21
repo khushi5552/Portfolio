@@ -724,4 +724,27 @@ footer{
         color: var(--color-white);
         z-index: 2;
     }
-    
+    /* CSS for desktop layout */
+.service-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap */
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.service-box {
+    flex: 0 1 300px; /* Set initial, grow, and shrink factors */
+    max-width: 300px; /* Set maximum width */
+    text-align: center;
+    padding: 20px;
+}
+
+/* CSS for mobile layout */
+@media (max-width: 768px) {
+    .service-box {
+        flex-basis: calc(100% - 40px); /* Set basis to 100% minus margins */
+    }
+}
+
